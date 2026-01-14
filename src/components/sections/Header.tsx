@@ -27,17 +27,15 @@ export const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center ${
-        isScrolled 
-          ? 'py-4' 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center ${isScrolled
+          ? 'py-4'
           : 'py-6'
-      }`}
+        }`}
     >
-      <div className={`relative transition-all duration-500 px-6 py-2 flex items-center justify-between ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-xl border border-accent/30 shadow-pill rounded-full max-w-screen-lg w-[95%] mx-auto gap-6' 
+      <div className={`relative transition-all duration-500 px-4 sm:px-6 py-2 flex items-center justify-between ${isScrolled
+          ? 'bg-white/95 backdrop-blur-xl border border-accent/30 shadow-pill rounded-full max-w-screen-lg w-[92%] sm:w-[95%] mx-auto gap-4 sm:gap-6'
           : 'container mx-auto bg-transparent border-transparent w-full'
-      }`}>
+        }`}>
         <Link href="/" className="hover:scale-105 transition-transform duration-300 shrink-0">
           <Logo variant="full" theme={isScrolled ? 'dark' : 'light'} size={isScrolled ? 'sm' : 'md'} />
         </Link>
@@ -48,25 +46,24 @@ export const Header = () => {
             <Link
               key={link.name}
               href={link.href}
-              className={`text-xs font-bold transition-all duration-300 relative group tracking-widest uppercase font-modelica ${
-                isScrolled ? 'text-[#003B46] hover:text-[#207681]' : 'text-white hover:text-[#D4AF37]'
-              }`}
+              className={`text-xs font-bold transition-all duration-300 relative group tracking-widest uppercase font-modelica ${isScrolled ? 'text-[#003B46] hover:text-[#207681]' : 'text-white hover:text-[#D4AF37]'
+                }`}
             >
               {link.name}
-              <span 
+              <span
                 className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full`}
                 style={{ backgroundColor: isScrolled ? '#207681' : '#D4AF37' }}
               ></span>
             </Link>
           ))}
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className={`transition-all duration-300 px-6 font-bold text-[10px] tracking-tighter rounded-full border-2 font-modelica ${
-              isScrolled 
-                ? 'border-[#003B46] text-[#003B46] hover:bg-[#003B46] hover:text-white py-2' 
+          <Button
+            variant="outline"
+            size="sm"
+            className={`transition-all duration-300 px-6 font-bold text-[10px] tracking-tighter rounded-full border-2 font-modelica ${isScrolled
+                ? 'border-[#003B46] text-[#003B46] hover:bg-[#003B46] hover:text-white py-2'
                 : 'border-[#D4AF37] text-white hover:bg-[#D4AF37] hover:text-[#003B46]'
-            }`}
+              }`}
+            onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
           >
             VER VALOR DO ACESSO
           </Button>
@@ -74,9 +71,8 @@ export const Header = () => {
 
         {/* Mobile Toggle */}
         <button
-          className={`md:hidden p-2 rounded-full transition-colors ${
-            isScrolled ? 'bg-[#003B46]/5 border border-[#003B46]/10' : 'bg-white/5 border border-white/10'
-          }`}
+          className={`md:hidden p-2 rounded-full transition-colors ${isScrolled ? 'bg-[#003B46]/5 border border-[#003B46]/10' : 'bg-white/5 border border-white/10'
+            }`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Menu"
         >
@@ -91,13 +87,13 @@ export const Header = () => {
       {/* Mobile Menu */}
       <AnimatePresence>
         {isMenuOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -20, scale: 0.95 }}
-            className="absolute top-full left-0 right-0 p-4 md:hidden flex justify-center"
+            className="absolute top-full left-0 right-0 px-4 pt-2 md:hidden flex justify-center"
           >
-            <div className="bg-white/95 backdrop-blur-3xl border border-accent/20 rounded-[2.5rem] p-8 shadow-2xl w-full max-w-sm">
+            <div className="bg-white/95 backdrop-blur-3xl border border-accent/20 rounded-[2rem] p-6 shadow-2xl w-full max-w-sm">
               <nav className="flex flex-col gap-6">
                 {navLinks.map((link) => (
                   <Link
@@ -109,7 +105,15 @@ export const Header = () => {
                     {link.name}
                   </Link>
                 ))}
-                <Button variant="primary" size="lg" className="w-full mt-4 font-bold font-modelica">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  className="w-full mt-4 font-bold font-modelica"
+                  onClick={() => {
+                    setIsMenuOpen(false);
+                    document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
                   VER VALOR DO ACESSO
                 </Button>
               </nav>

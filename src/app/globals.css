@@ -52,10 +52,14 @@
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   @apply font-sans text-neutral-900 antialiased bg-white selection:bg-primary/10 selection:text-primary;
   color: #1a1a1a;
-  overflow-x: hidden;
 }
 
 /* Scrollbar personalizado */
