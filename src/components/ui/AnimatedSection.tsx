@@ -20,6 +20,7 @@ export const AnimatedSection = ({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, delay }}
+      style={{ willChange: "opacity, transform" }}
       className={className}
     >
       {children}

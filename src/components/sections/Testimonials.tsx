@@ -41,34 +41,34 @@ export const Testimonials = () => {
       {/* Decorative Logo Pattern - Hidden on mobile */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden sm:block">
         {/* Top center - medium */}
-        <img 
-          src="/images/ICONE-B.png" 
-          alt="" 
+        <img
+          src="/images/ICONE-B.png"
+          alt=""
           className="absolute w-[200px] md:w-[300px] h-[200px] md:h-[300px] object-contain"
           style={{ top: '-10%', left: '50%', transform: 'translateX(-50%)', opacity: 0.1, filter: 'invert(1) brightness(0.7)' }}
         />
         {/* Bottom left - large */}
-        <img 
-          src="/images/ICONE-B.png" 
-          alt="" 
+        <img
+          src="/images/ICONE-B.png"
+          alt=""
           className="absolute w-[250px] md:w-[400px] h-[250px] md:h-[400px] object-contain"
           style={{ bottom: '-10%', left: '-10%', opacity: 0.12, filter: 'invert(1) brightness(0.7)' }}
         />
         {/* Bottom right - medium */}
-        <img 
-          src="/images/ICONE-B.png" 
-          alt="" 
+        <img
+          src="/images/ICONE-B.png"
+          alt=""
           className="absolute w-[150px] md:w-[250px] h-[150px] md:h-[250px] object-contain"
           style={{ bottom: '10%', right: '5%', opacity: 0.1, filter: 'invert(1) brightness(0.7)' }}
         />
       </div>
-      
+
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-px" style={{ background: 'linear-gradient(to right, transparent, rgba(32, 118, 129, 0.2), transparent)' }}></div>
-      
+
       <Container>
         <div className="text-center mb-10 sm:mb-16 lg:mb-20">
-          <motion.span 
+          <motion.span
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             className="font-bold text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-3 sm:mb-4 block font-modelica"
@@ -76,7 +76,7 @@ export const Testimonials = () => {
           >
             NOSSAS REVIEWS
           </motion.span>
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -91,17 +91,18 @@ export const Testimonials = () => {
 
       {/* Infinite Horizontal Scroll */}
       <div className="relative flex overflow-hidden py-6 sm:py-10">
-        <motion.div 
+        <motion.div
           animate={{ x: ["0%", "-33.33%"] }}
-          transition={{ 
-            ease: "linear", 
+          transition={{
+            ease: "linear",
             duration: 40, // Slower for premium feel
-            repeat: Infinity 
+            repeat: Infinity
           }}
+          style={{ willChange: 'transform' }}
           className="flex gap-4 sm:gap-6 lg:gap-10 whitespace-nowrap"
         >
           {infiniteItems.map((t, idx) => (
-            <div 
+            <div
               key={idx}
               className="w-[280px] sm:w-[350px] lg:w-[450px] flex-shrink-0 bg-white p-5 sm:p-8 lg:p-10 rounded-xl sm:rounded-2xl lg:rounded-3xl border transition-all duration-500 hover:shadow-xl group"
               style={{ borderColor: 'rgba(0, 59, 70, 0.1)' }}
