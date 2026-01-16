@@ -11,8 +11,8 @@ export const Footer = () => {
   return (
     <footer 
       className="py-8 lg:py-10 overflow-hidden relative"
-      style={{ 
-        background: 'linear-gradient(135deg, #163e51 0%, #378090 100%)'
+      style={{
+        background: 'linear-gradient(135deg, #153D4A 0%, #2A5F72 100%)'
       }}
     >
       <Container>
@@ -40,7 +40,7 @@ export const Footer = () => {
           {/* CTA Button */}
           <Link 
             href="#planos"
-            className="flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-[#003B46] font-bold text-xs sm:text-sm rounded-lg hover:bg-white/90 transition-all group font-modelica"
+            className="flex items-center gap-2 px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-[#1A4B5C] font-bold text-xs sm:text-sm rounded-lg hover:bg-white/90 transition-all group font-modelica"
           >
             COMEÇAR AGORA
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />

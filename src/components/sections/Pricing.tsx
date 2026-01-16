@@ -54,7 +54,7 @@ export const Pricing = () => {
       id="planos"
       className="py-20 lg:py-28 relative overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #0f3541 0%, #1a5568 50%, #2a7a8f 100%)'
+        background: 'linear-gradient(135deg, #153D4A 0%, #1A4B5C 50%, #2A5F72 100%)'
       }}
     >
       <Container className="relative z-10">
@@ -63,7 +63,7 @@ export const Pricing = () => {
           <AnimatedSection>
             <h2
               className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-medium mb-6 sm:mb-8 leading-[1.15] font-modelica"
-              style={{ color: '#D4AF37' }}
+              style={{ color: '#D4A84B' }}
             >
               Cuide da sua saúde e da sua família <span className="font-black sm:block sm:mt-2">com mais tranquilidade.</span>
             </h2>
@@ -88,7 +88,7 @@ export const Pricing = () => {
               <button
                 onClick={() => setIsAnnual(!isAnnual)}
                 className={`w-14 sm:w-16 h-7 sm:h-8 rounded-full relative p-1 transition-all duration-300 ${isAnnual
-                  ? 'bg-gradient-to-r from-[#D4AF37] to-[#F4D03F]'
+                  ? 'bg-gradient-to-r from-[#D4A84B] to-[#E4C06B]'
                   : 'bg-white/15 border border-white/20'
                   }`}
                 aria-label="Alternar para anual"
@@ -102,7 +102,7 @@ export const Pricing = () => {
               </button>
               <div className="flex items-center gap-1 sm:gap-2">
                 <span
-                  className={`text-sm sm:text-base font-semibold transition-all duration-300 font-modelica ${isAnnual ? 'text-[#D4AF37]' : 'text-white/40'
+                  className={`text-sm sm:text-base font-semibold transition-all duration-300 font-modelica ${isAnnual ? 'text-[#D4A84B]' : 'text-white/40'
                     }`}
                 >
                   Anual
@@ -129,7 +129,7 @@ export const Pricing = () => {
                 whileHover={{ y: plan.highlight ? 0 : -8, scale: plan.highlight ? 1.02 : 1.01 }}
                 transition={{ duration: 0.3 }}
                 className={`relative h-full flex flex-col rounded-2xl sm:rounded-3xl transition-all duration-500 overflow-hidden ${plan.highlight
-                  ? 'shadow-2xl shadow-[#D4AF37]/30 z-20 ring-2 ring-[#D4AF37]/50'
+                  ? 'shadow-2xl shadow-[#D4A84B]/30 z-20 ring-2 ring-[#D4A84B]/50'
                   : 'bg-white shadow-xl'
                   }`}
                 style={plan.highlight ? {
@@ -139,7 +139,7 @@ export const Pricing = () => {
                 {/* Highlight Badge */}
                 {plan.highlight && (
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 z-10">
-                    <div className="bg-white text-[#D4AF37] text-[10px] sm:text-xs font-bold px-3 sm:px-4 py-1 sm:py-1.5 rounded-b-lg shadow-lg">
+                    <div className="bg-white text-[#D4A84B] text-[10px] sm:text-xs font-bold px-3 sm:px-4 py-1 sm:py-1.5 rounded-b-lg shadow-lg">
                       MAIS POPULAR
                     </div>
                   </div>
@@ -215,8 +215,8 @@ export const Pricing = () => {
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                     className={`w-full font-bold py-2.5 sm:py-3 rounded-xl text-[10px] sm:text-xs font-modelica transition-all duration-300 ${plan.highlight
-                      ? 'bg-[#0f3541] text-white hover:bg-[#164a5a] shadow-lg shadow-black/20'
-                      : 'bg-white text-neutral-700 border-2 border-[#0f3541] hover:bg-[#0f3541] hover:text-white'
+                      ? 'bg-[#153D4A] text-white hover:bg-[#2A5F72] shadow-lg shadow-black/20'
+                      : 'bg-white text-neutral-700 border-2 border-[#153D4A] hover:bg-[#153D4A] hover:text-white'
                       }`}
                   >
                     {plan.buttonText}

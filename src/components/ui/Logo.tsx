@@ -21,7 +21,7 @@ export const Logo = ({ variant = 'full', theme = 'light', size = 'md', className
       
       {variant === 'full' && (
         <span 
-          className={`${textSize} font-modelica font-bold tracking-tight ${theme === 'light' ? 'text-white' : 'text-[#003B46]'}`}
+          className={`${textSize} font-modelica font-bold tracking-tight ${theme === 'light' ? 'text-white' : 'text-[#1A4B5C]'}`}
         >
           QuatroMed
         </span>

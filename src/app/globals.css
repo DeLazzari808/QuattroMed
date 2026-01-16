@@ -72,12 +72,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #004AAD;
+  background: #1A4B5C;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00337C;
+  background: #153D4A;
 }
 
 /* Remove scrollbar do carrossel */
@@ -116,7 +116,7 @@ body {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 168, 75, 0.1);
   }
 
   .glass-dark {
@@ -134,19 +134,19 @@ body {
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #004AAD 0%, #3B82F6 100%);
+    background: linear-gradient(135deg, #1A4B5C 0%, #2A5F72 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .text-gradient-accent {
-    background: linear-gradient(135deg, #D4AF37 0%, #F6E05E 100%);
+    background: linear-gradient(135deg, #D4A84B 0%, #E4C06B 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .border-gold-thin {
-    border: 1px solid rgba(212, 175, 55, 0.2);
+    border: 1px solid rgba(212, 168, 75, 0.2);
   }
 
   .shadow-soft {

@@ -85,17 +85,17 @@ export const Problems = () => {
           <AnimatedSection>
             <span
               className="font-bold text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-3 sm:mb-4 block font-modelica"
-              style={{ color: '#207681' }}
+              style={{ color: '#2A5F72' }}
             >
               Análise de Mercado
             </span>
-            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl font-bold leading-[1.15] mb-4 sm:mb-6 font-modelica" style={{ color: '#207681' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-5xl font-bold leading-[1.15] mb-4 sm:mb-6 font-modelica" style={{ color: '#2A5F72' }}>
               A saúde tradicional no Brasil{' '}
               <span className="text-neutral-400">precisa de uma evolução.</span>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-neutral-600 max-w-2xl leading-relaxed font-modelica">
               Enfrentar filas e preços abusivos não deve ser a regra. A{' '}
-              <span className="font-bold" style={{ color: '#207681' }}>QuatroMed</span>{' '}
+              <span className="font-bold" style={{ color: '#2A5F72' }}>QuatroMed</span>{' '}
               redesenhou o acesso à saúde para ser digital, ágil e justo.
             </p>
           </AnimatedSection>
@@ -111,7 +111,7 @@ export const Problems = () => {
             transition={{ duration: 0.5 }}
             className="sm:col-span-2 md:col-span-2 rounded-2xl lg:rounded-3xl p-5 sm:p-6 lg:p-8 relative overflow-hidden shadow-lg"
             style={{
-              backgroundColor: '#207681',
+              backgroundColor: '#2A5F72',
             }}
           >
             <div className="relative z-10">
@@ -144,16 +144,16 @@ export const Problems = () => {
             className="rounded-2xl lg:rounded-3xl p-5 sm:p-6 lg:p-8 relative overflow-hidden border-2"
             style={{
               backgroundColor: 'white',
-              borderColor: '#D4AF37',
+              borderColor: '#D4A84B',
             }}
           >
             <div
               className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center mb-3 sm:mb-4"
               style={{ backgroundColor: 'rgba(212, 175, 55, 0.1)' }}
             >
-              <DollarSign className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#D4AF37' }} />
+              <DollarSign className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#D4A84B' }} />
             </div>
-            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 font-modelica" style={{ color: '#207681' }}>
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 font-modelica" style={{ color: '#2A5F72' }}>
               Custos Elevados
             </h3>
             <p className="text-neutral-600 text-sm lg:text-base leading-relaxed font-modelica">
@@ -177,9 +177,9 @@ export const Problems = () => {
               className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center mb-3 sm:mb-4"
               style={{ backgroundColor: 'rgba(0, 59, 70, 0.05)' }}
             >
-              <Clock className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#207681' }} />
+              <Clock className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#2A5F72' }} />
             </div>
-            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 font-modelica" style={{ color: '#207681' }}>
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 font-modelica" style={{ color: '#2A5F72' }}>
               Perda de Produtividade
             </h3>
             <p className="text-neutral-600 text-sm lg:text-base leading-relaxed font-modelica">
@@ -195,7 +195,7 @@ export const Problems = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="sm:col-span-2 md:col-span-2 rounded-2xl lg:rounded-3xl p-5 sm:p-6 lg:p-8 relative overflow-hidden"
             style={{
-              backgroundColor: '#207681',
+              backgroundColor: '#2A5F72',
             }}
           >
             <div className="relative z-10">

@@ -43,7 +43,7 @@ export const Solution = () => {
     <section
       className="py-20 lg:py-28 relative overflow-hidden"
       style={{
-        background: 'linear-gradient(135deg, #163e51 0%, #378090 100%)'
+        background: 'linear-gradient(135deg, #153D4A 0%, #2A5F72 100%)'
       }}
     >
       {/* Subtle pattern overlay */}
@@ -93,7 +93,7 @@ export const Solution = () => {
               <AnimatedSection key={idx} delay={idx * 0.1} className="min-w-[75vw] sm:min-w-0 snap-center first:pl-2 last:pr-2">
                 <div
                   className="group relative rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden aspect-[3/4] shadow-xl sm:shadow-2xl hover:shadow-3xl transition-all duration-500"
-                  style={{ background: 'linear-gradient(to right, #D4AF37, #F4D03F)' }}
+                  style={{ background: 'linear-gradient(to right, #D4A84B, #E4C06B)' }}
                 >
                   <img
                     src={doc.image}
@@ -131,7 +131,7 @@ export const Solution = () => {
           <div className="flex justify-center">
             <Button
               size="lg"
-              className="bg-gradient-to-r from-[#D4AF37] to-[#F4D03F] text-white border-none px-6 sm:px-12 py-4 sm:py-6 text-sm sm:text-lg lg:text-xl font-bold rounded-full shadow-[0_10px_25px_-5px_rgba(212,175,55,0.4)] hover:shadow-[0_20px_40px_-5px_rgba(212,175,55,0.5)] hover:scale-[1.05] active:scale-[0.98] transition-all duration-500 font-modelica group relative overflow-hidden"
+              className="bg-gradient-to-r from-[#D4A84B] to-[#E4C06B] text-white border-none px-6 sm:px-12 py-4 sm:py-6 text-sm sm:text-lg lg:text-xl font-bold rounded-full shadow-[0_10px_25px_-5px_rgba(212,175,55,0.4)] hover:shadow-[0_20px_40px_-5px_rgba(212,175,55,0.5)] hover:scale-[1.05] active:scale-[0.98] transition-all duration-500 font-modelica group relative overflow-hidden"
               onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <span className="relative z-10 flex items-center gap-2 sm:gap-3 tracking-wide">

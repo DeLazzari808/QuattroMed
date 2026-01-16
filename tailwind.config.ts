@@ -10,15 +10,15 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#004AAD', // Azul Médico Profundo
-          dark: '#00337C',
-          light: '#3B82F6',
-          muted: '#F0F7FF',
+          DEFAULT: '#1A4B5C', // Azul Petróleo (ID Visual QuatroMed)
+          dark: '#153D4A',
+          light: '#2A5F72',
+          muted: '#E8F4F7',
         },
         accent: {
-          DEFAULT: '#D4AF37', // Dourado Soft Premium
-          light: '#F6E05E',
-          dark: '#B8860B',
+          DEFAULT: '#D4A84B', // Dourado Mostarda (ID Visual QuatroMed)
+          light: '#E4C06B',
+          dark: '#B8923D',
         },
         neutral: {
           50: '#FDFDFD',
@@ -29,9 +29,9 @@ const config: Config = {
         },
       },
       boxShadow: {
-        'premium': '0 10px 30px -10px rgba(0, 74, 173, 0.1)',
-        'premium-hover': '0 20px 40px -15px rgba(0, 74, 173, 0.15)',
-        'gold-glow': '0 0 15px rgba(212, 175, 55, 0.2)',
+        'premium': '0 10px 30px -10px rgba(26, 75, 92, 0.1)',
+        'premium-hover': '0 20px 40px -15px rgba(26, 75, 92, 0.15)',
+        'gold-glow': '0 0 15px rgba(212, 168, 75, 0.2)',
         'pill': '0 4px 20px -5px rgba(0, 0, 0, 0.05)',
       },
       fontFamily: {
@@ -42,8 +42,8 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'medical-gradient': 'linear-gradient(135deg, #004AAD 0%, #00337C 100%)',
-        'clean-gradient': 'linear-gradient(180deg, #FFFFFF 0%, #F0F7FF 100%)',
+        'medical-gradient': 'linear-gradient(135deg, #1A4B5C 0%, #153D4A 100%)',
+        'clean-gradient': 'linear-gradient(180deg, #FFFFFF 0%, #E8F4F7 100%)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

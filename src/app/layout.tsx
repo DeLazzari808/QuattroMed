@@ -15,6 +15,9 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "QuatroMed Telemedicina Brasil | Acesso médico online sempre que você precisar",
   description: "Consultas médicas online a partir de valores acessíveis para todo o Brasil. Atendimento rápido, humano e 100% digital.",
+  icons: {
+    icon: "/ICONE-C.png",
+  },
 };
 
 export default function RootLayout({

@@ -72,7 +72,7 @@ export const Testimonials = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             className="font-bold text-[10px] sm:text-xs uppercase tracking-[0.2em] sm:tracking-[0.3em] mb-3 sm:mb-4 block font-modelica"
-            style={{ color: '#207681' }}
+            style={{ color: '#2A5F72' }}
           >
             NOSSAS REVIEWS
           </motion.span>
@@ -81,7 +81,7 @@ export const Testimonials = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
             className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold leading-tight font-modelica"
-            style={{ color: '#003B46' }}
+            style={{ color: '#1A4B5C' }}
           >
             O que nossos clientes <br className="hidden sm:block" />
             <span className="text-neutral-400">estão falando</span>
@@ -112,15 +112,15 @@ export const Testimonials = () => {
                   <img src={t.image} alt={t.name} className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-sm sm:text-lg font-modelica" style={{ color: '#003B46' }}>{t.name}</h4>
-                  <p className="text-[8px] sm:text-[10px] lg:text-xs font-bold uppercase tracking-widest font-modelica" style={{ color: '#207681' }}>{t.location}</p>
+                  <h4 className="font-bold text-sm sm:text-lg font-modelica" style={{ color: '#1A4B5C' }}>{t.name}</h4>
+                  <p className="text-[8px] sm:text-[10px] lg:text-xs font-bold uppercase tracking-widest font-modelica" style={{ color: '#2A5F72' }}>{t.location}</p>
                 </div>
                 <div className="ml-auto">
                   <img src="/images/ICONE-C.png" alt="Icon" className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
                 </div>
               </div>
 
-              <Quote className="mb-3 sm:mb-4 opacity-10" size={24} style={{ color: '#003B46' }} />
+              <Quote className="mb-3 sm:mb-4 opacity-10" size={24} style={{ color: '#1A4B5C' }} />
               <p className="text-neutral-600 font-medium whitespace-normal leading-relaxed text-xs sm:text-sm lg:text-base font-modelica">
                 "{t.text}"
               </p>

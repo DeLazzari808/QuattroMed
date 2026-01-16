@@ -67,7 +67,7 @@ export const FAQ = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-8 font-modelica"
-              style={{ color: '#003B46' }}
+              style={{ color: '#1A4B5C' }}
             >
               Perguntas frequentes
             </motion.h2>
@@ -100,16 +100,16 @@ export const FAQ = () => {
                 >
                   <span 
                     className="text-base sm:text-lg lg:text-xl font-bold transition-colors"
-                    style={{ color: '#003B46' }}
+                    style={{ color: '#1A4B5C' }}
                   >
                     {faq.question}
                   </span>
                   <div 
                     className="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center transition-all duration-300 shrink-0 shadow-sm"
                     style={{ 
-                      backgroundColor: openIdx === idx ? '#003B46' : 'transparent',
-                      border: openIdx === idx ? 'none' : '2px solid #003B46',
-                      color: openIdx === idx ? '#fff' : '#003B46'
+                      backgroundColor: openIdx === idx ? '#1A4B5C' : 'transparent',
+                      border: openIdx === idx ? 'none' : '2px solid #1A4B5C',
+                      color: openIdx === idx ? '#fff' : '#1A4B5C'
                     }}
                   >
                     <ChevronDown 

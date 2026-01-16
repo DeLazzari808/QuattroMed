@@ -21,7 +21,7 @@ export const HowItWorks = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-10 lg:mb-16 font-modelica px-2"
-          style={{ color: '#003B46' }}
+          style={{ color: '#1A4B5C' }}
         >
           Fale com um médico quando precisar, <br className="hidden md:block" /> sem filas e sem carência.
         </motion.h2>
@@ -39,7 +39,7 @@ export const HowItWorks = () => {
             <div
               className="bg-white/95 sm:bg-transparent sm:bg-[linear-gradient(135deg,rgba(255,255,255,0.45)_0%,rgba(255,255,255,0.3)_100%)] sm:backdrop-blur-md rounded-[1.5rem] sm:rounded-[2rem] lg:rounded-[2.5rem] px-5 sm:px-6 lg:px-8 py-8 sm:py-10 lg:py-12 border-2 max-w-md mx-auto lg:mx-0"
               style={{
-                borderColor: '#D4AF37',
+                borderColor: '#D4A84B',
                 boxShadow: '0 8px 32px rgba(0, 59, 70, 0.06), 0 2px 8px rgba(0, 0, 0, 0.02)',
               }}
             >
@@ -49,14 +49,14 @@ export const HowItWorks = () => {
                     {/* Circled Number */}
                     <div
                       className="w-9 h-9 sm:w-10 sm:h-10 rounded-full border-2 flex items-center justify-center shrink-0 font-bold text-base sm:text-lg font-modelica"
-                      style={{ borderColor: '#D4AF37', color: '#D4AF37' }}
+                      style={{ borderColor: '#D4A84B', color: '#D4A84B' }}
                     >
                       {step.number}
                     </div>
                     {/* Step Text */}
                     <p
                       className="text-base sm:text-lg lg:text-xl font-bold pt-1 sm:pt-1.5 font-modelica"
-                      style={{ color: '#003B46' }}
+                      style={{ color: '#1A4B5C' }}
                     >
                       {step.text}
                     </p>
@@ -67,7 +67,7 @@ export const HowItWorks = () => {
               {/* Bottom tagline */}
               <p
                 className="mt-8 sm:mt-10 text-sm sm:text-base lg:text-lg font-medium italic font-modelica"
-                style={{ color: '#D4AF37' }}
+                style={{ color: '#D4A84B' }}
               >
                 Pronto. Sem fila, sem deslocamento.
               </p>
@@ -107,7 +107,7 @@ export const HowItWorks = () => {
                 <div
                   className="rounded-[2rem] sm:rounded-[2.5rem] overflow-hidden aspect-[9/19]"
                   style={{
-                    background: 'linear-gradient(180deg, #163e51 0%, #378090 100%)'
+                    background: 'linear-gradient(180deg, #153D4A 0%, #2A5F72 100%)'
                   }}
                 >
                   {/* Status Bar */}

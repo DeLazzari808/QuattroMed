@@ -55,7 +55,7 @@ export const CTASection = () => {
         <div className="max-w-5xl mx-auto">
           <div
             className="rounded-[2rem] sm:rounded-[2.5rem] lg:rounded-[3rem] p-6 sm:p-10 md:p-16 lg:p-20 text-center relative overflow-hidden shadow-2xl"
-            style={{ background: 'linear-gradient(135deg, #163e51 0%, #378090 100%)' }}
+            style={{ background: 'linear-gradient(135deg, #153D4A 0%, #2A5F72 100%)' }}
           >
             {/* Inner Subtle Glow */}
             <div className="absolute top-0 right-0 w-32 sm:w-64 h-32 sm:h-64 rounded-full blur-3xl" style={{ backgroundColor: 'rgba(212, 175, 55, 0.1)' }}></div>
@@ -72,7 +72,7 @@ export const CTASection = () => {
 
               <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-7xl font-bold text-white leading-tight tracking-tight font-modelica">
                 Sua saúde merece <br className="hidden sm:block" />
-                <span style={{ color: '#D4AF37' }} className="italic font-medium text-3xl sm:text-4xl md:text-6xl lg:text-8xl">essa evolução.</span>
+                <span style={{ color: '#D4A84B' }} className="italic font-medium text-3xl sm:text-4xl md:text-6xl lg:text-8xl">essa evolução.</span>
               </h2>
 
               <p className="text-sm sm:text-base md:text-lg lg:text-xl text-white/80 font-medium max-w-2xl mx-auto leading-relaxed font-modelica">
@@ -82,7 +82,7 @@ export const CTASection = () => {
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-12 mb-2 sm:mb-4">
                 {trustItems.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-1.5 sm:gap-2.5 text-white/80 font-bold uppercase text-[7px] sm:text-[9px] tracking-widest font-modelica">
-                    <span className="w-1 h-1 rounded-full" style={{ backgroundColor: '#D4AF37' }}></span>
+                    <span className="w-1 h-1 rounded-full" style={{ backgroundColor: '#D4A84B' }}></span>
                     <span>{item.text}</span>
                   </div>
                 ))}
@@ -93,14 +93,14 @@ export const CTASection = () => {
                   variant="outline"
                   size="lg"
                   className="px-6 sm:px-10 lg:px-16 py-4 sm:py-6 lg:py-7 text-sm sm:text-base lg:text-lg font-bold transition-all duration-300 group rounded-full border-2 font-modelica"
-                  style={{ borderColor: '#D4AF37', color: '#D4AF37', backgroundColor: 'transparent' }}
+                  style={{ borderColor: '#D4A84B', color: '#D4A84B', backgroundColor: 'transparent' }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = '#D4AF37';
-                    e.currentTarget.style.color = '#003B46';
+                    e.currentTarget.style.backgroundColor = '#D4A84B';
+                    e.currentTarget.style.color = '#1A4B5C';
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.backgroundColor = 'transparent';
-                    e.currentTarget.style.color = '#D4AF37';
+                    e.currentTarget.style.color = '#D4A84B';
                   }}
                   onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
                 >

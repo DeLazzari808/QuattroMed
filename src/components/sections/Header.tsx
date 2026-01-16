@@ -46,13 +46,13 @@ export const Header = () => {
             <Link
               key={link.name}
               href={link.href}
-              className={`text-xs font-bold transition-all duration-300 relative group tracking-widest uppercase font-modelica ${isScrolled ? 'text-[#003B46] hover:text-[#207681]' : 'text-white hover:text-[#D4AF37]'
+              className={`text-xs font-bold transition-all duration-300 relative group tracking-widest uppercase font-modelica ${isScrolled ? 'text-[#1A4B5C] hover:text-[#2A5F72]' : 'text-white hover:text-[#D4A84B]'
                 }`}
             >
               {link.name}
               <span
                 className={`absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full`}
-                style={{ backgroundColor: isScrolled ? '#207681' : '#D4AF37' }}
+                style={{ backgroundColor: isScrolled ? '#2A5F72' : '#D4A84B' }}
               ></span>
             </Link>
           ))}
@@ -60,8 +60,8 @@ export const Header = () => {
             variant="outline"
             size="sm"
             className={`transition-all duration-300 px-6 font-bold text-[10px] tracking-tighter rounded-full border-2 font-modelica ${isScrolled
-                ? 'border-[#003B46] text-[#003B46] hover:bg-[#003B46] hover:text-white py-2'
-                : 'border-[#D4AF37] text-white hover:bg-[#D4AF37] hover:text-[#003B46]'
+                ? 'border-[#1A4B5C] text-[#1A4B5C] hover:bg-[#1A4B5C] hover:text-white py-2'
+                : 'border-[#D4A84B] text-white hover:bg-[#D4A84B] hover:text-[#1A4B5C]'
               }`}
             onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
           >
@@ -71,15 +71,15 @@ export const Header = () => {
 
         {/* Mobile Toggle */}
         <button
-          className={`md:hidden p-2 rounded-full transition-colors ${isScrolled ? 'bg-[#003B46]/5 border border-[#003B46]/10' : 'bg-white/5 border border-white/10'
+          className={`md:hidden p-2 rounded-full transition-colors ${isScrolled ? 'bg-[#1A4B5C]/5 border border-[#1A4B5C]/10' : 'bg-white/5 border border-white/10'
             }`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Menu"
         >
           {isMenuOpen ? (
-            <X className={isScrolled ? 'text-[#003B46]' : 'text-white'} size={20} />
+            <X className={isScrolled ? 'text-[#1A4B5C]' : 'text-white'} size={20} />
           ) : (
-            <Menu className={isScrolled ? 'text-[#003B46]' : 'text-white'} size={20} />
+            <Menu className={isScrolled ? 'text-[#1A4B5C]' : 'text-white'} size={20} />
           )}
         </button>
       </div>
