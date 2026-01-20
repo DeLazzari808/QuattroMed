@@ -7,7 +7,7 @@ import { Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Luciano Hollanda',
+    name: 'Luciano Silva',
     location: 'Curitiba/PR',
     text: 'Sempre deixei consultas para depois pelo custo. Com a QuatroMed, o atendimento foi imediato e barato. Salvou minha rotina!',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop',

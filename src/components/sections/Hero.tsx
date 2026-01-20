@@ -21,7 +21,7 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 pb-32 sm:pb-20 overflow-hidden" style={{ backgroundColor: '#1A4B5C' }}>
+    <section className="relative min-h-screen flex items-center pt-28 sm:pt-32 pb-32 sm:pb-20 overflow-hidden" style={{ backgroundColor: '#1A4B5C' }}>
       {/* Background Image & Gradient */}
       <div className="absolute inset-0 z-0">
         <img

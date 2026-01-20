@@ -13,7 +13,7 @@ export const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -28,13 +28,13 @@ export const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 flex justify-center ${isScrolled
-          ? 'py-4'
-          : 'py-6'
+        ? 'py-4'
+        : 'py-6'
         }`}
     >
       <div className={`relative transition-all duration-500 px-4 sm:px-6 py-2 flex items-center justify-between ${isScrolled
-          ? 'bg-white/95 backdrop-blur-xl border border-accent/30 shadow-pill rounded-full max-w-screen-lg w-[92%] sm:w-[95%] mx-auto gap-4 sm:gap-6'
-          : 'container mx-auto bg-transparent border-transparent w-full'
+        ? 'bg-white/95 backdrop-blur-xl border border-accent/30 shadow-pill rounded-full max-w-screen-lg w-[92%] sm:w-[95%] mx-auto gap-4 sm:gap-6'
+        : 'container mx-auto bg-transparent border-transparent w-full'
         }`}>
         <Link href="/" className="hover:scale-105 transition-transform duration-300 shrink-0">
           <Logo variant="full" theme={isScrolled ? 'dark' : 'light'} size={isScrolled ? 'sm' : 'md'} />
@@ -60,8 +60,8 @@ export const Header = () => {
             variant="outline"
             size="sm"
             className={`transition-all duration-300 px-6 font-bold text-[10px] tracking-tighter rounded-full border-2 font-modelica ${isScrolled
-                ? 'border-[#1A4B5C] text-[#1A4B5C] hover:bg-[#1A4B5C] hover:text-white py-2'
-                : 'border-[#D4A84B] text-white hover:bg-[#D4A84B] hover:text-[#1A4B5C]'
+              ? 'border-[#1A4B5C] text-[#1A4B5C] hover:bg-[#1A4B5C] hover:text-white py-2'
+              : 'border-[#D4A84B] text-white hover:bg-[#D4A84B] hover:text-[#1A4B5C]'
               }`}
             onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
           >
