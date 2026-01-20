@@ -110,10 +110,10 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="relative sm:absolute sm:bottom-10 w-full sm:w-auto left-0 right-0 sm:left-auto sm:right-4 md:right-0 lg:-right-24 z-30 mt-8 sm:mt-0 px-4 sm:px-0 flex justify-center sm:block"
+          className="relative sm:absolute sm:bottom-10 w-full sm:w-auto left-0 right-0 sm:left-auto sm:right-4 md:right-4 lg:-right-8 xl:-right-24 z-30 mt-8 sm:mt-0 px-4 sm:px-0 flex justify-center sm:block"
         >
           <div
-            className="backdrop-blur-md rounded-2xl sm:rounded-[1.5rem] lg:rounded-[2rem] p-6 sm:p-4 lg:p-6 xl:p-8 overflow-hidden relative w-full sm:max-w-[500px] md:max-w-[600px] lg:max-w-[950px]"
+            className="backdrop-blur-md rounded-2xl sm:rounded-[1.5rem] lg:rounded-[2rem] p-6 sm:p-4 lg:p-6 xl:p-8 overflow-hidden relative w-full sm:max-w-[480px] md:max-w-[580px] lg:max-w-[750px] xl:max-w-[950px]"
             style={{
               background: 'rgba(255, 255, 255, 0.08)',
               border: '1px solid rgba(255, 255, 255, 0.15)',
@@ -129,7 +129,7 @@ export const Hero = () => {
                     {stat.value}
                   </div>
                   {/* Labels - Bw Modelica Semibold Uppercase */}
-                  <div className="text-xs sm:text-[7.5px] md:text-[9px] lg:text-[10.5px] text-white font-semibold uppercase tracking-widest sm:tracking-[0.05em] font-modelica opacity-90 leading-tight text-center whitespace-normal sm:whitespace-nowrap px-2 sm:px-0">
+                  <div className="text-xs sm:text-[7.5px] md:text-[9px] lg:text-[10.5px] xl:text-[11px] text-white font-semibold uppercase tracking-widest sm:tracking-[0.05em] font-modelica opacity-90 leading-tight text-center px-1 sm:px-0 max-w-[140px] sm:max-w-none">
                     {stat.label}
                   </div>
                 </div>
