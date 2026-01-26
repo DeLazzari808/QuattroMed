@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: 'Tem fidelidade?',
-    answer: 'Não, você pode cancelar seu acesso a qualquer momento sem taxas extras ou burocracia.',
+    answer: 'Não, você pode cancelar seu plano a qualquer momento sem taxas extras ou burocracia.',
   },
   {
     question: 'Quais especialidades são atendidas?',
@@ -36,23 +36,23 @@ export const FAQ = () => {
       {/* Decorative Logo Pattern - Hidden on mobile */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden sm:block">
         {/* Top left - large */}
-        <img 
-          src="/images/ICONE-B.png" 
-          alt="" 
+        <img
+          src="/images/ICONE-B.png"
+          alt=""
           className="absolute w-[200px] md:w-[350px] h-[200px] md:h-[350px] object-contain"
           style={{ top: '-8%', left: '-5%', opacity: 0.15, filter: 'invert(1) brightness(0.7)' }}
         />
         {/* Top right - medium */}
-        <img 
-          src="/images/ICONE-B.png" 
-          alt="" 
+        <img
+          src="/images/ICONE-B.png"
+          alt=""
           className="absolute w-[150px] md:w-[250px] h-[150px] md:h-[250px] object-contain"
           style={{ top: '8%', right: '8%', opacity: 0.12, filter: 'invert(1) brightness(0.7)' }}
         />
         {/* Bottom right - large */}
-        <img 
-          src="/images/ICONE-B.png" 
-          alt="" 
+        <img
+          src="/images/ICONE-B.png"
+          alt=""
           className="absolute w-[180px] md:w-[320px] h-[180px] md:h-[320px] object-contain"
           style={{ bottom: '-5%', right: '-3%', opacity: 0.15, filter: 'invert(1) brightness(0.7)' }}
         />
@@ -62,7 +62,7 @@ export const FAQ = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-start">
           {/* Left Side: Header */}
           <div className="max-w-xl">
-            <motion.h2 
+            <motion.h2
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
@@ -71,21 +71,21 @@ export const FAQ = () => {
             >
               Perguntas frequentes
             </motion.h2>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
               className="text-neutral-900 font-bold text-sm sm:text-base lg:text-lg leading-relaxed max-w-md font-modelica"
             >
-              Escolha a modalidade de acesso que melhor se adapte às suas necessidades. Sem taxas ocultas, sem surpresas — apenas preços transparentes para cuidar de você e da sua família.
+              Escolha o plano que melhor se adapte às suas necessidades. Sem taxas ocultas, sem surpresas — apenas preços transparentes para cuidar de você e da sua família.
             </motion.p>
           </div>
 
           {/* Right Side: Accordion */}
           <div className="space-y-3 sm:space-y-4">
             {faqs.map((faq, idx) => (
-              <motion.div 
+              <motion.div
                 key={idx}
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -98,27 +98,27 @@ export const FAQ = () => {
                   onClick={() => setOpenIdx(openIdx === idx ? null : idx)}
                   className="w-full flex items-center justify-between p-4 sm:p-6 lg:p-8 text-left group font-modelica gap-3"
                 >
-                  <span 
+                  <span
                     className="text-base sm:text-lg lg:text-xl font-bold transition-colors"
                     style={{ color: '#1A4B5C' }}
                   >
                     {faq.question}
                   </span>
-                  <div 
+                  <div
                     className="w-9 h-9 sm:w-10 sm:h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center transition-all duration-300 shrink-0 shadow-sm"
-                    style={{ 
+                    style={{
                       backgroundColor: openIdx === idx ? '#1A4B5C' : 'transparent',
                       border: openIdx === idx ? 'none' : '2px solid #1A4B5C',
                       color: openIdx === idx ? '#fff' : '#1A4B5C'
                     }}
                   >
-                    <ChevronDown 
-                      size={18} 
-                      className={`transition-transform duration-300 ${openIdx === idx ? 'rotate-180' : ''}`} 
+                    <ChevronDown
+                      size={18}
+                      className={`transition-transform duration-300 ${openIdx === idx ? 'rotate-180' : ''}`}
                     />
                   </div>
                 </button>
-                
+
                 <AnimatePresence>
                   {openIdx === idx && (
                     <motion.div

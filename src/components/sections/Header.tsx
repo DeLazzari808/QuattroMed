@@ -22,7 +22,7 @@ export const Header = () => {
   const navLinks = [
     { name: 'Nossa solução', href: '#solucao' },
     { name: 'Como funciona', href: '#como-funciona' },
-    { name: 'Acesso', href: '#planos' },
+    { name: 'Planos', href: '#planos' },
   ];
 
   return (
@@ -65,7 +65,7 @@ export const Header = () => {
               }`}
             onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
           >
-            VER VALOR DO ACESSO
+            VER VALOR DO PLANO
           </Button>
         </nav>
 
@@ -114,7 +114,7 @@ export const Header = () => {
                     document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
-                  VER VALOR DO ACESSO
+                  VER VALOR DO PLANO
                 </Button>
               </nav>
             </div>

@@ -99,7 +99,7 @@ export const Hero = () => {
                 className="border-accent/50 text-white hover:bg-accent hover:text-primary px-8 sm:px-10 py-4 sm:py-5 text-[14px] md:text-[15px] font-bold rounded-2xl transition-all duration-500 hover:scale-105 font-modelica"
                 onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Ver valor do acesso
+                Ver valor do plano
               </Button>
             </motion.div>
           </div>
@@ -110,10 +110,10 @@ export const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="relative sm:absolute sm:bottom-10 w-full sm:w-auto left-0 right-0 sm:left-auto sm:right-4 md:right-4 lg:-right-8 xl:-right-24 z-30 mt-8 sm:mt-0 px-4 sm:px-0 flex justify-center sm:block"
+          className="relative sm:absolute sm:bottom-10 w-full sm:w-auto left-0 right-0 sm:left-auto sm:right-4 md:right-4 lg:right-0 xl:-right-24 z-30 mt-8 sm:mt-0 px-4 sm:px-0 flex justify-center sm:block"
         >
           <div
-            className="backdrop-blur-md rounded-2xl sm:rounded-[1.5rem] lg:rounded-[2rem] p-6 sm:p-4 lg:p-6 xl:p-8 overflow-hidden relative w-full sm:max-w-[480px] md:max-w-[580px] lg:max-w-[750px] xl:max-w-[950px]"
+            className="backdrop-blur-md rounded-2xl sm:rounded-[1.5rem] lg:rounded-[2rem] p-6 sm:p-4 lg:p-6 xl:p-8 overflow-hidden relative w-full sm:max-w-[480px] md:max-w-[580px] lg:max-w-[680px] xl:max-w-[950px]"
             style={{
               background: 'rgba(255, 255, 255, 0.08)',
               border: '1px solid rgba(255, 255, 255, 0.15)',

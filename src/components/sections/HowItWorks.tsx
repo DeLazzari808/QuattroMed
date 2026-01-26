@@ -5,7 +5,7 @@ import { Container } from '@/components/ui/Container';
 import { motion } from 'framer-motion';
 
 const steps = [
-  { number: 1, text: 'Escolha seu acesso.' },
+  { number: 1, text: 'Escolha seu plano.' },
   { number: 2, text: 'Faça o cadastro em poucos minutos.' },
   { number: 3, text: 'Seja atendido rapidamente.' },
   { number: 4, text: 'Fale com o médico por vídeo.' },

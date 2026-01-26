@@ -10,7 +10,7 @@ export const Pricing = () => {
 
   const plans = [
     {
-      name: 'Acesso individual',
+      name: 'Plano individual',
       price: isAnnual ? '24,99' : '29,99',
       description: 'Ideal para quem quer cuidar da própria saúde sem pagar caro.',
       features: [
@@ -19,16 +19,16 @@ export const Pricing = () => {
         'Sem filas, sem carência e sem complicação.',
         'Sem taxa de adesão.',
       ],
-      buttonText: 'QUERO ESSE ACESSO',
+      buttonText: 'QUERO ESSE PLANO',
       highlight: false,
     },
     {
-      name: 'Acesso família',
+      name: 'Plano família',
       price: isAnnual ? '58,99' : '69,99',
       description: 'Mais proteção para quem você ama, pagando menos por pessoa.',
       features: [
         'Atendimento para até X pessoas.',
-        'Economia mensal em relação ao acesso individual.',
+        'Economia mensal em relação ao plano individual.',
         'Orientação médica, avaliação de sintomas e próximos passos.',
         'Atendimento médico online 24 horas para toda a família.',
       ],
@@ -36,7 +36,7 @@ export const Pricing = () => {
       highlight: true,
     },
     {
-      name: 'Acesso empresarial',
+      name: 'Plano empresarial',
       price: 'XX',
       description: 'Saúde acessível para seus colaboradores, com mais produtividade.',
       features: [
@@ -73,7 +73,7 @@ export const Pricing = () => {
                 Facilitar o acesso ao cuidado médico com valores acessíveis, simples e sem filas, sem carência e sem complicação.
               </p>
               <p>
-                Escolha abaixo a modalidade de acesso ideal para a sua realidade e comece a cuidar da sua saúde hoje mesmo.
+                Escolha abaixo o plano ideal para a sua realidade e comece a cuidar da sua saúde hoje mesmo.
               </p>
             </div>
 

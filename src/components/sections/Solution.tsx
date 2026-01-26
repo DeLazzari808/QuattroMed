@@ -29,7 +29,7 @@ export const Solution = () => {
     },
     {
       name: 'Ana Júlia',
-      role: 'Cardiologista',
+      role: 'Pediatra',
       image: '/images/MEDICO-2.png',
     },
     {
@@ -90,7 +90,7 @@ export const Solution = () => {
             className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4 pb-4 -mx-4 px-8 sm:grid sm:grid-cols-3 sm:overflow-visible sm:pb-0 sm:mx-auto sm:px-0 sm:gap-6 lg:gap-8 mb-10 lg:mb-16 max-w-5xl"
           >
             {doctors.map((doc, idx) => (
-              <AnimatedSection key={idx} delay={idx * 0.1} className="min-w-[75vw] sm:min-w-0 snap-center first:pl-2 last:pr-2">
+              <AnimatedSection key={idx} delay={idx * 0.1} className="min-w-[65vw] sm:min-w-0 snap-center first:pl-2 last:pr-2">
                 <div
                   className="group relative rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden aspect-[3/4] shadow-xl sm:shadow-2xl hover:shadow-3xl transition-all duration-500"
                   style={{ background: 'linear-gradient(to right, #D4A84B, #E4C06B)' }}
@@ -135,8 +135,8 @@ export const Solution = () => {
               onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
             >
               <span className="relative z-10 flex items-center gap-2 sm:gap-3 tracking-wide">
-                <span className="hidden sm:inline">ESCOLHA A MODALIDADE DE ACESSO</span>
-                <span className="sm:hidden">ESCOLHER ACESSO</span>
+                <span className="hidden sm:inline">ESCOLHA O SEU PLANO</span>
+                <span className="sm:hidden">ESCOLHER PLANO</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 group-hover:translate-x-2 transition-transform duration-300" strokeWidth={3} />
               </span>
 

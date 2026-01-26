@@ -104,7 +104,7 @@ export const CTASection = () => {
                   }}
                   onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
                 >
-                  VER VALOR DO ACESSO
+                  VER VALOR DO PLANO
                   <ArrowRight className="ml-2 sm:ml-3 group-hover:translate-x-1 transition-transform" size={18} strokeWidth={3} />
                 </Button>
               </div>
