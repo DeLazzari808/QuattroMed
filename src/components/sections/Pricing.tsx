@@ -20,6 +20,9 @@ export const Pricing = () => {
         'Sem taxa de adesão.',
       ],
       buttonText: 'QUERO ESSE PLANO',
+      ctaLink: isAnnual
+        ? 'https://checkout-pay.lytex.com.br/link/5cf63f39d44b5df83f5279f62bf51495:21aa244b8168b45764b5e87e30d1dc4bb5969f9d8b790cdcf19c5ceeab3e66b9'
+        : 'http://quatromedtelemedicina.lsxmedical.com/',
       highlight: false,
     },
     {
@@ -27,12 +30,15 @@ export const Pricing = () => {
       price: isAnnual ? '58,99' : '69,99',
       description: 'Mais proteção para quem você ama, pagando menos por pessoa.',
       features: [
-        'Atendimento para até X pessoas.',
+        'Atendimento para até 3 pessoas.',
         'Economia mensal em relação ao plano individual.',
         'Orientação médica, avaliação de sintomas e próximos passos.',
         'Atendimento médico online 24 horas para toda a família.',
       ],
       buttonText: 'QUERO PROTEGER MINHA FAMÍLIA',
+      ctaLink: isAnnual
+        ? 'https://checkout-pay.lytex.com.br/link/fb3982812698be6ed183d8321f558216:5736521834f487699ee0d3d6bd317623b789c3c53ec413212819d15c1f38776f'
+        : 'http://quatromedtelemedicina.lsxmedical.com/',
       highlight: true,
     },
     {
@@ -45,6 +51,7 @@ export const Pricing = () => {
         'Ideal para pequenas e médias empresas.',
       ],
       buttonText: 'SOLICITAR PROPOSTA',
+      ctaLink: 'http://quatromedtelemedicina.lsxmedical.com/',
       highlight: false,
     },
   ];
@@ -211,16 +218,19 @@ export const Pricing = () => {
                   </ul>
 
                   {/* Button */}
-                  <motion.button
+                  <motion.a
+                    href={plan.ctaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className={`w-full font-bold py-2.5 sm:py-3 rounded-xl text-[10px] sm:text-xs font-modelica transition-all duration-300 ${plan.highlight
+                    className={`w-full font-bold py-2.5 sm:py-3 rounded-xl text-[10px] sm:text-xs font-modelica transition-all duration-300 text-center block ${plan.highlight
                       ? 'bg-[#153D4A] text-white hover:bg-[#2A5F72] shadow-lg shadow-black/20'
                       : 'bg-white text-neutral-700 border-2 border-[#153D4A] hover:bg-[#153D4A] hover:text-white'
                       }`}
                   >
                     {plan.buttonText}
-                  </motion.button>
+                  </motion.a>
                 </div>
               </motion.div>
             </AnimatedSection>
