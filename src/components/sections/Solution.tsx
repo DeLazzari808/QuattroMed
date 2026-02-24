@@ -11,13 +11,15 @@ export const Solution = () => {
 
   const scrollLeft = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -300, behavior: 'smooth' });
+      const cardWidth = carouselRef.current.querySelector('.snap-center')?.clientWidth ?? 300;
+      carouselRef.current.scrollBy({ left: -(cardWidth + 16), behavior: 'smooth' });
     }
   };
 
   const scrollRight = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 300, behavior: 'smooth' });
+      const cardWidth = carouselRef.current.querySelector('.snap-center')?.clientWidth ?? 300;
+      carouselRef.current.scrollBy({ left: cardWidth + 16, behavior: 'smooth' });
     }
   };
 
@@ -71,26 +73,26 @@ export const Solution = () => {
           {/* Mobile Navigation Arrows */}
           <button
             onClick={scrollLeft}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center text-white sm:hidden -ml-2 border border-white/20 active:scale-95 transition-all"
+            className="absolute left-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white sm:hidden border border-white/30 active:scale-95 transition-all"
             aria-label="Anterior"
           >
-            <ArrowRight className="w-6 h-6 rotate-180" />
+            <ArrowRight className="w-5 h-5 rotate-180" />
           </button>
 
           <button
             onClick={scrollRight}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center text-white sm:hidden -mr-2 border border-white/20 active:scale-95 transition-all"
+            className="absolute right-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white sm:hidden border border-white/30 active:scale-95 transition-all"
             aria-label="Próximo"
           >
-            <ArrowRight className="w-6 h-6" />
+            <ArrowRight className="w-5 h-5" />
           </button>
 
           <div
             ref={carouselRef}
-            className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4 pb-4 -mx-4 px-8 sm:grid sm:grid-cols-3 sm:overflow-visible sm:pb-0 sm:mx-auto sm:px-0 sm:gap-6 lg:gap-8 mb-10 lg:mb-16 max-w-5xl"
+            className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-3 pb-4 px-[15vw] sm:grid sm:grid-cols-3 sm:overflow-visible sm:pb-0 sm:mx-auto sm:px-0 sm:gap-6 lg:gap-8 mb-10 lg:mb-16 max-w-5xl"
           >
             {doctors.map((doc, idx) => (
-              <AnimatedSection key={idx} delay={idx * 0.1} className="min-w-[65vw] sm:min-w-0 snap-center first:pl-2 last:pr-2">
+              <div key={idx} className="min-w-[55vw] sm:min-w-0 snap-center">
                 <div
                   className="group relative rounded-xl sm:rounded-2xl lg:rounded-3xl overflow-hidden aspect-[3/4] shadow-xl sm:shadow-2xl hover:shadow-3xl transition-all duration-500"
                   style={{ background: 'linear-gradient(to right, #D4A84B, #E4C06B)' }}
@@ -117,7 +119,7 @@ export const Solution = () => {
                     <p className="text-white/70 text-xs sm:text-sm font-modelica">{doc.role}</p>
                   </div>
                 </div>
-              </AnimatedSection>
+              </div>
             ))}
           </div>
         </div>

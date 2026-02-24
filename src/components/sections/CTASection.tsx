@@ -14,7 +14,7 @@ export const CTASection = () => {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-white relative overflow-hidden">
+    <section className="py-12 sm:py-24 lg:py-32 bg-white relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-[800px] h-[800px] rounded-full blur-[150px] -translate-y-1/2 translate-x-1/2" style={{ backgroundColor: 'rgba(32, 118, 129, 0.05)' }}></div>
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2" style={{ backgroundColor: 'rgba(212, 175, 55, 0.05)' }}></div>

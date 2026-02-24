@@ -26,7 +26,7 @@ export const Footer = () => {
 
           {/* Nav Links */}
           <nav className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-10">
-            <Link href="/LSX_Termo_Uso_Politica_Privacidade.pdf" target="_blank" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors font-modelica">
+            <Link href="/termos" target="_blank" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors font-modelica">
               Termos de uso e Política de privacidade
             </Link>
             <Link href="https://api.whatsapp.com/send/?phone=5541999798027&text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista&type=phone_number&app_absent=0" target="_blank" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors font-modelica">

@@ -189,7 +189,7 @@ export const Pricing = () => {
                       </span>
                     </div>
                     {isAnnual && plan.annualTotal && (
-                      <p className={`text-[10px] sm:text-xs mt-1 font-modelica ${plan.highlight ? 'text-white/70' : 'text-neutral-400'}`}>
+                      <p className={`text-xs sm:text-sm mt-1 font-bold font-modelica ${plan.highlight ? 'text-white' : 'text-neutral-700'}`}>
                         Total anual: {plan.annualTotal}
                       </p>
                     )}

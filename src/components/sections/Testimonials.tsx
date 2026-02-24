@@ -37,7 +37,7 @@ export const Testimonials = () => {
   const infiniteItems = [...testimonials, ...testimonials, ...testimonials];
 
   return (
-    <section className="py-24 lg:py-32 relative overflow-hidden" style={{ backgroundColor: '#f8fafb' }}>
+    <section className="py-12 sm:py-24 lg:py-32 relative overflow-hidden" style={{ backgroundColor: '#f8fafb' }}>
       {/* Decorative Logo Pattern - Hidden on mobile */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden sm:block">
         {/* Top center - medium */}
