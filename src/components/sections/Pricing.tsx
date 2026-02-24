@@ -11,7 +11,8 @@ export const Pricing = () => {
   const plans = [
     {
       name: 'Plano individual',
-      price: isAnnual ? '24,99' : '29,99',
+      price: isAnnual ? '26,25' : '29,90',
+      annualTotal: 'R$315',
       description: 'Ideal para quem quer cuidar da própria saúde sem pagar caro.',
       features: [
         'Atendimento médico online 24 horas, todos os dias.',
@@ -22,12 +23,13 @@ export const Pricing = () => {
       buttonText: 'QUERO ESSE PLANO',
       ctaLink: isAnnual
         ? 'https://checkout-pay.lytex.com.br/link/5cf63f39d44b5df83f5279f62bf51495:21aa244b8168b45764b5e87e30d1dc4bb5969f9d8b790cdcf19c5ceeab3e66b9'
-        : 'http://quatromedtelemedicina.lsxmedical.com/',
+        : 'https://checkout-pay.lytex.com.br/link/fdd8a8de837c668108ae60d75b9fa3ee:0f47505508210551fbd7bde08945ffc1695dae18a8d8edf0c101258ace98f661',
       highlight: false,
     },
     {
       name: 'Plano família',
-      price: isAnnual ? '58,99' : '69,99',
+      price: isAnnual ? '61,50' : '69,90',
+      annualTotal: 'R$738',
       description: 'Mais proteção para quem você ama, pagando menos por pessoa.',
       features: [
         'Atendimento para até 3 pessoas.',
@@ -38,7 +40,7 @@ export const Pricing = () => {
       buttonText: 'QUERO PROTEGER MINHA FAMÍLIA',
       ctaLink: isAnnual
         ? 'https://checkout-pay.lytex.com.br/link/fb3982812698be6ed183d8321f558216:5736521834f487699ee0d3d6bd317623b789c3c53ec413212819d15c1f38776f'
-        : 'http://quatromedtelemedicina.lsxmedical.com/',
+        : 'https://checkout-pay.lytex.com.br/link/e963a026f3e9bd7c78dbdceadebce646:cb2977d388a33bc3bb879e1253ac4035f3ff09501d1b28ef9e45d99a5a1409cc',
       highlight: true,
     },
     {
@@ -120,7 +122,7 @@ export const Pricing = () => {
                     animate={{ opacity: 1, scale: 1 }}
                     className="text-[10px] sm:text-xs font-bold bg-green-500 text-white px-1.5 sm:px-2 py-0.5 rounded-full"
                   >
-                    -17%
+                    -12%
                   </motion.span>
                 )}
               </div>
@@ -186,6 +188,11 @@ export const Pricing = () => {
                         /mês
                       </span>
                     </div>
+                    {isAnnual && plan.annualTotal && (
+                      <p className={`text-[10px] sm:text-xs mt-1 font-modelica ${plan.highlight ? 'text-white/70' : 'text-neutral-400'}`}>
+                        Total anual: {plan.annualTotal}
+                      </p>
+                    )}
                   </div>
 
                   {/* Description */}

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Container } from '@/components/ui/Container';
-import { Instagram, Linkedin, Youtube, ArrowRight } from 'lucide-react';
+import { Instagram, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export const Footer = () => {
@@ -26,13 +26,10 @@ export const Footer = () => {
 
           {/* Nav Links */}
           <nav className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-10">
-            <Link href="#" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors font-modelica">
-              Termos de uso
+            <Link href="/LSX_Termo_Uso_Politica_Privacidade.pdf" target="_blank" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors font-modelica">
+              Termos de uso e Política de privacidade
             </Link>
-            <Link href="#" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors font-modelica">
-              Política de privacidade
-            </Link>
-            <Link href="#" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors font-modelica">
+            <Link href="https://api.whatsapp.com/send/?phone=5541999798027&text=Ol%C3%A1%2C+gostaria+de+falar+com+um+especialista&type=phone_number&app_absent=0" target="_blank" className="text-white/80 hover:text-white text-xs sm:text-sm font-medium transition-colors font-modelica">
               Contato
             </Link>
           </nav>
@@ -51,14 +48,8 @@ export const Footer = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 pt-4 sm:pt-6">
           {/* Social Icons */}
           <div className="flex items-center gap-3 sm:gap-4">
-            <Link href="#" className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all">
-              <Youtube size={16} className="text-white" />
-            </Link>
-            <Link href="#" className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all">
+            <Link href="https://www.instagram.com/quatromedbrasil/" target="_blank" className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all">
               <Instagram size={16} className="text-white" />
-            </Link>
-            <Link href="#" className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all">
-              <Linkedin size={16} className="text-white" />
             </Link>
           </div>
 

@@ -7,21 +7,20 @@ export const SITE_CONFIG = {
   phone: '+55 (11) 9999-9999',
   whatsapp: '+5511999999999',
   social: {
-    instagram: 'https://instagram.com/quatromed',
-    linkedin: 'https://linkedin.com/company/quatromed',
+    instagram: 'https://www.instagram.com/quatromedbrasil/',
   },
 } as const;
 
 // Pricing Plans
 export const PRICING_PLANS = {
   monthly: {
-    individual: 29.99,
-    family: 69.99,
+    individual: 29.90,
+    family: 69.90,
     enterprise: 'custom',
   },
   annual: {
-    individual: 24.99,
-    family: 59.99,
+    individual: 26.25,
+    family: 61.50,
     enterprise: 'custom',
   },
 } as const;

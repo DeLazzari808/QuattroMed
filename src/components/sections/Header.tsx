@@ -22,7 +22,7 @@ export const Header = () => {
   const navLinks = [
     { name: 'Nossa solução', href: '#solucao' },
     { name: 'Como funciona', href: '#como-funciona' },
-    { name: 'Planos', href: '#planos' },
+    { name: 'Entrar', href: 'http://quatromedtelemedicina.lsxmedical.com/', external: true },
   ];
 
   return (
@@ -46,6 +46,7 @@ export const Header = () => {
             <Link
               key={link.name}
               href={link.href}
+              {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               className={`text-xs font-bold transition-all duration-300 relative group tracking-widest uppercase font-modelica ${isScrolled ? 'text-[#1A4B5C] hover:text-[#2A5F72]' : 'text-white hover:text-[#D4A84B]'
                 }`}
             >
@@ -99,6 +100,7 @@ export const Header = () => {
                   <Link
                     key={link.name}
                     href={link.href}
+                    {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     className="text-primary text-xl font-bold tracking-tighter uppercase border-b border-primary/5 pb-4 hover:text-accent transition-colors font-modelica"
                     onClick={() => setIsMenuOpen(false)}
                   >
