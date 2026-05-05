@@ -27,23 +27,6 @@ export const Pricing = () => {
       highlight: false,
     },
     {
-      name: 'Plano família',
-      price: isAnnual ? '61,50' : '69,90',
-      annualTotal: 'R$738',
-      description: 'Mais proteção para quem você ama, pagando menos por pessoa.',
-      features: [
-        'Atendimento para até 3 pessoas.',
-        'Economia mensal em relação ao plano individual.',
-        'Orientação médica, avaliação de sintomas e próximos passos.',
-        'Atendimento médico online 24 horas para toda a família.',
-      ],
-      buttonText: 'QUERO PROTEGER MINHA FAMÍLIA',
-      ctaLink: isAnnual
-        ? 'https://checkout-pay.lytex.com.br/link/fb3982812698be6ed183d8321f558216:5736521834f487699ee0d3d6bd317623b789c3c53ec413212819d15c1f38776f'
-        : 'https://checkout-pay.lytex.com.br/link/e963a026f3e9bd7c78dbdceadebce646:cb2977d388a33bc3bb879e1253ac4035f3ff09501d1b28ef9e45d99a5a1409cc',
-      highlight: true,
-    },
-    {
       name: 'Plano empresarial',
       price: 'XX',
       description: 'Saúde acessível para seus colaboradores, com mais produtividade.',

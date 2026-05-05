@@ -15,12 +15,10 @@ export const SITE_CONFIG = {
 export const PRICING_PLANS = {
   monthly: {
     individual: 29.90,
-    family: 69.90,
     enterprise: 'custom',
   },
   annual: {
     individual: 26.25,
-    family: 61.50,
     enterprise: 'custom',
   },
 } as const;
