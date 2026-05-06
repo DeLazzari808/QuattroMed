@@ -24,7 +24,7 @@ export const Pricing = () => {
       ctaLink: isAnnual
         ? 'https://checkout-pay.lytex.com.br/link/5cf63f39d44b5df83f5279f62bf51495:21aa244b8168b45764b5e87e30d1dc4bb5969f9d8b790cdcf19c5ceeab3e66b9'
         : 'https://checkout-pay.lytex.com.br/link/fdd8a8de837c668108ae60d75b9fa3ee:0f47505508210551fbd7bde08945ffc1695dae18a8d8edf0c101258ace98f661',
-      highlight: false,
+      highlight: true,
     },
     {
       name: 'Plano empresarial',
@@ -121,11 +121,11 @@ export const Pricing = () => {
                 whileHover={{ y: plan.highlight ? 0 : -8, scale: plan.highlight ? 1.02 : 1.01 }}
                 transition={{ duration: 0.3 }}
                 className={`relative h-full flex flex-col rounded-2xl sm:rounded-3xl transition-all duration-500 overflow-hidden ${plan.highlight
-                  ? 'shadow-2xl shadow-[#D4A84B]/30 z-20 ring-2 ring-[#D4A84B]/50'
+                  ? 'shadow-2xl shadow-[#da8e2e]/30 z-20 ring-2 ring-[#be935d]/50'
                   : 'bg-white shadow-xl'
                   }`}
                 style={plan.highlight ? {
-                  background: 'linear-gradient(45deg, #c58511 0%, #e0a84e 50%, #eec687 100%)'
+                  background: 'linear-gradient(45deg, #be935d 0%, #da8e2e 100%)'
                 } : {}}
               >
                 {/* Highlight Badge */}
