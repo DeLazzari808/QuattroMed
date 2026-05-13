@@ -22,8 +22,8 @@ export const Pricing = () => {
       ],
       buttonText: 'QUERO ESSE PLANO',
       ctaLink: isAnnual
-        ? 'https://checkout-pay.lytex.com.br/link/5cf63f39d44b5df83f5279f62bf51495:21aa244b8168b45764b5e87e30d1dc4bb5969f9d8b790cdcf19c5ceeab3e66b9'
-        : 'https://checkout-pay.lytex.com.br/link/fdd8a8de837c668108ae60d75b9fa3ee:0f47505508210551fbd7bde08945ffc1695dae18a8d8edf0c101258ace98f661',
+        ? 'https://hotm.io/QUATROMED-INDIVIDUAL-ANUAL'
+        : 'https://hotm.io/QUATROMED-INDIVIDUAL-MENSAL',
       highlight: true,
     },
     {
